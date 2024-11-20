@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Notes Sharing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Student Notes Sharing Platform</h1>
+    <p>Upload and share your study materials with admin approval!</p>
+  </header>
+
+  <main>
+    <!-- File Upload Section -->
+    <section class="upload-section">
+      <h2>Upload Notes</h2>
+      <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" required>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <!-- Pending Files Section (For Admin) -->
+    <section class="pending-list">
+      <h2>Pending Approval (Admin Only)</h2>
+      <ul id="pendingList">
+        <!-- Pending files will be listed here -->
+      </ul>
+    </section>
+
+    <!-- Published Files Section -->
+    <section class="published-list">
+      <h2>Published Notes</h2>
+      <ul id="publishedList">
+        <!-- Approved files will be listed here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for students, by students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
